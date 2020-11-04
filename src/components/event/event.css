@@ -1,0 +1,10 @@
+.events{
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration{
+  border-bottom: 1px solid black;
+    padding: 1rem;
+}
