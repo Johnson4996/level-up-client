@@ -1,0 +1,9 @@
+.games{
+    display: flex;
+    flex-direction: row;
+}
+
+.game{
+    margin:2rem;
+    padding: 1rem;
+}
