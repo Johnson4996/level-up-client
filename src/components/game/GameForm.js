@@ -78,7 +78,7 @@ export const GameForm = props => {
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="gameTypeId">Game Type: </label>
-                    <select type="text" name="gameTypeId" required className="form-control"
+                    <select name="gameTypeId" required className="form-control"
                         value={currentGame.gameTypeId}
                         onChange={handleControlledInputChange}>
                         <option value="0">Select game type</option>
@@ -106,6 +106,7 @@ export const GameForm = props => {
 
                     // Send POST request to your API
                     createGame(game)
+                    props.history.push("/")
                 }}
                 className="btn btn-primary">Create</button>
         </form>
